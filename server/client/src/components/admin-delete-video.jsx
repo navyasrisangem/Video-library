@@ -13,7 +13,7 @@ export function AdminDeleteVideo() {
     let navigate = useNavigate();
 
     function handleDeleteVideo() {
-        axios.delete(`http://127.0.0.1:5050/delete-video/${params.id}`)
+        axios.delete(`https://video-library-z8t4.onrender.com/delete-video/${params.id}`)
             .then(() => {
                 alert("Video deleted succesfully!");
             })
@@ -21,7 +21,7 @@ export function AdminDeleteVideo() {
     }
 
     useEffect(() => {
-        axios.get(`http://127.0.0.1:5050/get-video/${params.id}`)
+        axios.get(`https://video-library-z8t4.onrender.com/get-video/${params.id}`)
             .then(response => {
                 setVideos(response.data);
                 // console.log(response.data);

@@ -22,7 +22,7 @@ export function AdminEditVideo() {   //the process is we are getting the video b
             CategoryId: videos[0].CategoryId
         },
         onSubmit: (values) => {
-            axios.put(`http://127.0.0.1:5050/edit-video/${params.id}`, values) //values is collecting videos from form.
+            axios.put(`https://video-library-z8t4.onrender.com/edit-video/${params.id}`, values) //values is collecting videos from form.
                 .then(() => {
                     alert("Video edited successfully!");
                 })
@@ -32,7 +32,7 @@ export function AdminEditVideo() {   //the process is we are getting the video b
     });
 
     function LoadCategories() {
-        axios.get(`http://127.0.0.1:5050/get-categories`)
+        axios.get(`https://video-library-z8t4.onrender.com/get-categories`)
             .then(response => {
                 response.data.unshift({ CategoryId: -1, CategoryName: 'Select a category' });
                 setCategories(response.data);
@@ -42,7 +42,7 @@ export function AdminEditVideo() {   //the process is we are getting the video b
 
     useEffect(() => {
         LoadCategories();
-        axios.get(`http://127.0.0.1:5050/get-video/${params.id}`)
+        axios.get(`https://video-library-z8t4.onrender.com/get-video/${params.id}`)
             .then(response => {
                 setVideos(response.data);
                 // console.log(response.data);

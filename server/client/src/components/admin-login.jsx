@@ -14,7 +14,7 @@ export function AdminLogin() {
             Password: ''
         },
         onSubmit: (admin) => {
-            axios.get("http://127.0.0.1:5050/get-admin")
+            axios.get("https://video-library-z8t4.onrender.com/get-admin")
                 .then(response => {
                     var user = response.data.find(item => admin.UserId === item.UserId);
                     if (user) {

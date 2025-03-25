@@ -16,7 +16,7 @@ export function UserRegister() {
       Mobile: ''
     },
     onSubmit: (user) => {
-      axios.post("http://127.0.0.1:5050/register-user", user);
+      axios.post("https://video-library-z8t4.onrender.com/register-user", user);
       alert("User registered succesfully!");
       navigate("/user-login");
     }

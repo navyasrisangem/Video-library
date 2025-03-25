@@ -21,7 +21,7 @@ export function AdminAddVideo() {
         },
 
         onSubmit: (video) => {
-            axios.post("http://127.0.0.1:5050/add-video", video)
+            axios.post("https://video-library-z8t4.onrender.com/add-video", video)
                 .then(() => {
                     alert(`Video added succesfully`);
                 })
@@ -30,7 +30,7 @@ export function AdminAddVideo() {
     })
 
     useEffect(() => {
-        axios.get("http://127.0.0.1:5050/get-categories")
+        axios.get("https://video-library-z8t4.onrender.com/get-categories")
             .then(response => {
                 response.data.unshift({
                     CategoryId: 0,

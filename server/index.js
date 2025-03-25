@@ -176,5 +176,6 @@ app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "/client/build/index.html"));
 });
 
-app.listen(5050);
-console.log(`Server started : http://127.0.0.1:5050`);
+app.listen(5050, () => {
+    console.log(`Server started at: https://video-library-z8t4.onrender.com`);
+});

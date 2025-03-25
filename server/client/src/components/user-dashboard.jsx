@@ -50,7 +50,7 @@ export function UserDashboard() {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:5050/get-categories");
+      const response = await axios.get("https://video-library-z8t4.onrender.com/get-categories");
       setCategories(response.data);
     } catch (error) {
       console.error("Error fetching categories:", error);
@@ -60,8 +60,8 @@ export function UserDashboard() {
   const fetchVideos = async (categoryId = "") => {
     try {
       const url = categoryId
-        ? `http://127.0.0.1:5050/filter-videos/${categoryId}`
-        : `http://127.0.0.1:5050/get-videos`;
+        ? `https://video-library-z8t4.onrender.com/filter-videos/${categoryId}`
+        : `https://video-library-z8t4.onrender.com/get-videos`;
 
       const response = await axios.get(url);
       setVideos(response.data);

@@ -21,7 +21,7 @@ export function AdminDashboard() {
     // Fetch videos
     const fetchVideos = async () => {
         try {
-            const response = await axios.get("http://127.0.0.1:5050/get-videos");
+            const response = await axios.get("https://video-library-z8t4.onrender.com/get-videos");
             setVideos(response.data);
         } catch (error) {
             console.error("Error fetching videos:", error);
