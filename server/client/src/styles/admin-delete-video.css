@@ -1,0 +1,46 @@
+.delete-video-container {
+  background-color: #00246B;
+  color: #CADCFC;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .delete-video-container {
+    padding: 20px;
+    width: 80%;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 456px) {
+  .delete-video-container {
+    padding: 15px;
+    width: 80%;
+  }
+
+  .btn-group {
+    gap: 8px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
