@@ -44,9 +44,9 @@ The Video Library is a full-stack responsive application built using the MERN st
 
 <img width="706" alt="image" src="https://github.com/user-attachments/assets/9bd19f5d-dc79-453d-951c-dec224c30483" />
 
-### **Admin:**
-
 <img width="847" alt="image" src="https://github.com/user-attachments/assets/cee087b2-c11b-44f5-bc83-b93577fa88a1" />
+
+### **Admin:**
 
 <img width="1085" alt="image" src="https://github.com/user-attachments/assets/e7334990-4206-4aeb-a7cb-957b301b561d" />
 
