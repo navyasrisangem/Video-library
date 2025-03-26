@@ -1,4 +1,4 @@
-### **Video Library - Full Stack Responsive MERN Project**
+# **Video Library - Full Stack Responsive MERN Project**
 
 ## 📌 Project Overview
 The Video Library is a full-stack responsive application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) that allows users to explore, categorize, and manage videos efficiently. It features user authentication, admin controls, and a user-specific persistent "Watch Later".
@@ -31,13 +31,6 @@ The Video Library is a full-stack responsive application built using the MERN st
 
 ---
 
-## ⚙️ **Tools Used**
-Postman: API testing
-MongoDB Atlas: Cloud-based database
-Render: Deployment platform
-
----
-
 ## 📸 Screenshots
 
 ### **Client:**
@@ -50,6 +43,8 @@ Render: Deployment platform
 <img width="1097" alt="image" src="https://github.com/user-attachments/assets/53a396ce-6f30-43cd-ada0-79d62ac4e29d" />
 
 <img width="706" alt="image" src="https://github.com/user-attachments/assets/9bd19f5d-dc79-453d-951c-dec224c30483" />
+
+### **Admin:**
 
 <img width="847" alt="image" src="https://github.com/user-attachments/assets/cee087b2-c11b-44f5-bc83-b93577fa88a1" />
 
